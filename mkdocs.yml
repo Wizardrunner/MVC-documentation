@@ -1,0 +1,6 @@
+site_name: Documentación MVC Enlaces
+site_url: https://wizardrunner.github.io/MVC-documentation/
+theme:
+  name: material 
+repo_url: https://github.com/wizardrunner/MVC-documentation
+repo_name: MVC-documentation
