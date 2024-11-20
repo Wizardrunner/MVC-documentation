@@ -278,11 +278,35 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#paso-1-crear-las-tablas-en-phpmyadmin" class="md-nav__link">
+  <a href="#paso-1-proporcionar-la-base-de-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      Paso 1: Crear las Tablas en phpMyAdmin
+      Paso 1: Proporcionar la Base de Datos
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Paso 1: Proporcionar la Base de Datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-tablas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación de Tablas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datos-de-prueba" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datos de Prueba
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -321,9 +345,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#codigo-completo" class="md-nav__link">
+  <a href="#explicacion-del-codigo" class="md-nav__link">
     <span class="md-ellipsis">
-      Código Completo:
+      Explicación del Código:
     </span>
   </a>
   
@@ -331,6 +355,15 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puntos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Puntos Clave:
+    </span>
+  </a>
   
 </li>
         
@@ -353,6 +386,15 @@
   <a href="#estructura-del-proyecto" class="md-nav__link">
     <span class="md-ellipsis">
       Estructura del Proyecto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archivos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archivos Clave
     </span>
   </a>
   
@@ -453,11 +495,35 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#paso-1-crear-las-tablas-en-phpmyadmin" class="md-nav__link">
+  <a href="#paso-1-proporcionar-la-base-de-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      Paso 1: Crear las Tablas en phpMyAdmin
+      Paso 1: Proporcionar la Base de Datos
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Paso 1: Proporcionar la Base de Datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-tablas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación de Tablas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datos-de-prueba" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datos de Prueba
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -496,9 +562,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#codigo-completo" class="md-nav__link">
+  <a href="#explicacion-del-codigo" class="md-nav__link">
     <span class="md-ellipsis">
-      Código Completo:
+      Explicación del Código:
     </span>
   </a>
   
@@ -506,6 +572,15 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puntos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Puntos Clave:
+    </span>
+  </a>
   
 </li>
         
@@ -528,6 +603,15 @@
   <a href="#estructura-del-proyecto" class="md-nav__link">
     <span class="md-ellipsis">
       Estructura del Proyecto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archivos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archivos Clave
     </span>
   </a>
   
@@ -593,15 +677,21 @@
 
 
 <h1 id="documentacion-del-proyecto-mvc-enlaces">📚 Documentación del Proyecto MVC Enlaces</h1>
+<p>Esta documentación detalla el ciclo de vida del desarrollo de una aplicación MVC, incluyendo la configuración de la base de datos, desarrollo del modelo, controlador y vistas, así como las pruebas y despliegue.</p>
+<hr />
 <h2 id="ciclo-de-vida-del-desarrollo-de-la-aplicacion">🔄 Ciclo de Vida del Desarrollo de la Aplicación</h2>
-<p>A continuación, se describe el proceso completo de creación de esta aplicación MVC, desde la configuración de la base de datos hasta la implementación y pruebas.</p>
+<p>El proceso de desarrollo de esta aplicación se divide en las siguientes fases:</p>
+<ol>
+<li><strong>Configuración de la base de datos</strong>.</li>
+<li><strong>Desarrollo del modelo (<code>ModelBBDD</code>) para gestionar la conexión y las consultas SQL</strong>.</li>
+<li><strong>Implementación del patrón MVC</strong>, con sus controladores, vistas y enrutamiento.</li>
+<li><strong>Pruebas y despliegue local de la aplicación</strong>.</li>
+</ol>
 <hr />
 <h2 id="1-configuracion-de-la-base-de-datos">🗄️ 1. Configuración de la Base de Datos</h2>
-<h3 id="paso-1-crear-las-tablas-en-phpmyadmin">Paso 1: Crear las Tablas en <code>phpMyAdmin</code></h3>
-<ol>
-<li>Abre <code>phpMyAdmin</code> o cualquier herramienta para gestionar MySQL.</li>
-<li>Ejecuta las siguientes consultas SQL para crear las tablas <code>categoria</code> y <code>vinculos</code>:</li>
-</ol>
+<h3 id="paso-1-proporcionar-la-base-de-datos">Paso 1: Proporcionar la Base de Datos</h3>
+<p>La base de datos inicial fue proporcionada y contenía las tablas <code>categoria</code> y <code>vinculos</code>. Si no tienes acceso a esa base de datos, puedes crearla manualmente ejecutando las siguientes consultas SQL en <strong>phpMyAdmin</strong> o cualquier gestor de MySQL:</p>
+<h4 id="creacion-de-tablas">Creación de Tablas</h4>
 <pre><code class="language-sql">CREATE TABLE `categoria` (
     `pk_categoria` int NOT NULL AUTO_INCREMENT,
     `categoria` varchar(25) DEFAULT NULL,
@@ -620,8 +710,21 @@ CREATE TABLE `vinculos` (
     CONSTRAINT `fk_vinculos_categorias` FOREIGN KEY (`fk_categoria`) REFERENCES `categoria` (`pk_categoria`)
 ) ENGINE=InnoDB;
 </code></pre>
-<h3 id="paso-2-crear-la-vista-vista_enlaces">Paso 2: Crear la Vista vista_enlaces</h3>
-<p>Esta vista combina las tablas categoria y vinculos para facilitar las búsquedas:</p>
+<h4 id="datos-de-prueba">Datos de Prueba</h4>
+<p>Si necesitas cargar datos iniciales, puedes utilizar las siguientes consultas:</p>
+<pre><code class="language-sql">INSERT INTO `categoria` VALUES 
+(1, 'PHP', 'LENGUAJE'), 
+(2, 'CSS', 'LENGUAJE'),
+(3, 'JS', 'LENGUAJE'),
+(4, 'BOOTSTRAP', 'FRAMEWORK');
+
+INSERT INTO `vinculos` VALUES 
+(1, 'https://www.php.net/', 'Documentación PHP', 1),
+(2, 'https://getbootstrap.com/', 'Bootstrap Framework', 4),
+(3, 'https://developer.mozilla.org/en-US/docs/Web/CSS', 'CSS Referencia', 2);
+</code></pre>
+<h3 id="paso-2-crear-la-vista-vista_enlaces">Paso 2: Crear la Vista <code>vista_enlaces</code></h3>
+<p>La vista <code>vista_enlaces</code> facilita las consultas combinando datos de ambas tablas (<code>categoria</code> y <code>vinculos</code>):</p>
 <pre><code class="language-sql">CREATE VIEW vista_enlaces AS
 SELECT
     vinculos.pk_vinculo,
@@ -632,18 +735,19 @@ SELECT
 FROM vinculos
 JOIN categoria ON vinculos.fk_categoria = categoria.pk_categoria;
 </code></pre>
+<p><strong>Nota:</strong> Si la base de datos que te pasaron ya tiene esta vista configurada, no es necesario ejecutarla.</p>
 <h2 id="2-desarrollo-del-objeto-modelbbdd">💻 2. Desarrollo del Objeto ModelBBDD</h2>
 <h3 id="proposito">Propósito:</h3>
-<p>El objeto ModelBBDD maneja la conexión a la base de datos y las consultas.</p>
-<h4 id="codigo-completo">Código Completo:</h4>
+<p>El objeto <code>ModelBBDD</code> centraliza la conexión a la base de datos y la ejecución de consultas SQL.</p>
+<h4 id="explicacion-del-codigo">Explicación del Código:</h4>
 <pre><code class="language-php">&lt;?php
 
 class ModelBBDD {
-    private $host = 'localhost';
-    private $dbname = 'enlaces';
-    private $user = 'root';
-    private $password = '';
-    private $pdo;
+    private $host = 'localhost';  // Dirección del servidor
+    private $dbname = 'enlaces';  // Nombre de la base de datos
+    private $user = 'root';       // Usuario de la base de datos
+    private $password = '';       // Contraseña del usuario
+    private $pdo;                 // Objeto PDO para conexión
 
     public function __construct() {
         try {
@@ -687,6 +791,12 @@ class ModelBBDD {
     }
 }
 </code></pre>
+<h3 id="puntos-clave">Puntos Clave:</h3>
+<ol>
+<li>La conexión a la base de datos utiliza PDO.</li>
+<li>Las consultas están preparadas para evitar inyecciones SQL.</li>
+<li>Los filtros permiten búsquedas dinámicas por categoría, tipo de lenguaje o título.</li>
+</ol>
 <h2 id="3-desarrollo-de-la-aplicacion-mvc">🏗️ 3. Desarrollo de la Aplicación MVC</h2>
 <h3 id="estructura-del-proyecto">Estructura del Proyecto</h3>
 <pre><code class="language-plaintext">/project-root
@@ -706,6 +816,12 @@ class ModelBBDD {
 │   └── footer.php            # Pie de página
 └── index.php                 # Punto de entrada principal
 </code></pre>
+<h3 id="archivos-clave">Archivos Clave</h3>
+<ol>
+<li>Autoload.php: Carga automática de clases.</li>
+<li>ViewController.php: Renderiza vistas de forma centralizada.</li>
+<li>PreguntasController.php: Gestiona las búsquedas y pasa los datos a las vistas.</li>
+</ol>
 <hr />
 <h3 id="a-archivo-autoloadphp">a) Archivo <code>Autoload.php</code></h3>
 <p>Encargado de cargar automáticamente las clases necesarias.</p>
